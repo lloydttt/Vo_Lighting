@@ -1,13 +1,16 @@
 #include <Arduino.h>
 #include "ec11.h"
 
-#define EC11_key
 
-void ec11_init(){
+
+void EC11::ec11_init(){
+    pinMode(check_key, INPUT_PULLUP);
+    pinMode(ec11_a, INPUT_PULLUP);
+    pinMode(ec11_b, INPUT_PULLUP);
 
 }
 
-int ec11_check(){
+int EC11::ec11_check(){
     
 }
 
