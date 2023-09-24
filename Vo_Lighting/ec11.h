@@ -1,9 +1,27 @@
 #ifndef EC11_H
 #define EC11_H
 
-void ec11_init();
+#include <Arduino.h>
 
-int ec11_check();
+#define check_key 
+#define ec11_a 
+#define ec11_b 
+
+class EC11{
+
+public:
+    int silence;
+    int rotate_ori;
+
+
+    void ec11_init();
+
+    int ec11_scan();
+
+
+};
+
+
 
 
 #endif
